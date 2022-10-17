@@ -130,60 +130,34 @@ img {
     -ms-transform: skewY(-3deg);
 }
 
-/* Utilities */
+/* Stats */
 
-/* margin 0 top bottom and auto left right */
-/* overflow auto because h1 has margin top 10px */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
+.stats {
+    padding-top:100px;
 }
 
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+.stats-heading {
+    max-width: 500px;
+    margin: auto;
 }
 
-/* fractions */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* grid-template-columns: repeat(2, 1fr)*/
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+.stats .grid h3 {
+    font-size: 35px;
 }
 
-/* box shadow: horizontal offset, vertival, size, color */
-.card {
-    color: #333;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0, 0.2);
-    padding: 20px;
-    margin: 10px;
+.stats .grid p {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 30px;
-    cursor: pointer;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 5px;
+/* Cli */
+
+.cli .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
-.btn-outline {
-    background-color: transparent;
-    border: 1px white solid;
-}
-
-.btn:hover {
-    transform: scale(.98);
+.cli .grid > *:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2
 }
