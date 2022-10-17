@@ -2,7 +2,9 @@
 
 /* set variables in root */
 :root {
-    --primary-color: #047aed
+    --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
 }
 
 /* Change default padding */
@@ -160,4 +162,36 @@ img {
 .cli .grid > *:first-child {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2
+}
+
+/* Cloud */
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
+}
+
+/* Languages */
+
+.languages .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: transform 0.2s ease-in;
+}
+
+.languages .flex {
+    flex-wrap: wrap;
+}
+
+.languages .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages .card:hover {
+    transform: translateY(-15px);
+}
+
+/* Footer */
+
+.footer .social a {
+    margin: 0 10px;
 }
